@@ -4,11 +4,11 @@
  
 <div class="courses">
 
-<course-card [title]="coreCourse.title"></course-card>
+<course-card (courseSelected)="onCourseSelected($event)" [course]="coreCourse"></course-card>
 
-<course-card [title]="rxjsCourse.title"></course-card>
+<course-card [course]="rxjsCourse"></course-card>
 
-<course-card [title]="ngrxCourse.title"></course-card>
+<course-card [course]="ngrxCourse"></course-card>
 
 </div>
 

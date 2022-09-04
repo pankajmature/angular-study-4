@@ -16,6 +16,11 @@ export class AppComponent {
   rxjsCourse : ICourse = this.courses[1];
   ngrxCourse : ICourse = this.courses[2];
 
+  onCourseSelected(course : ICourse)
+  {
+    console.log("App Componet - Course Selected.")
+  }
+
   title = 'angular-study-4';
 
 }

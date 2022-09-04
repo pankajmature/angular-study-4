@@ -1,17 +1,21 @@
 <div class="course-card">
 
     <div class="course-title">
-      {{ title }}
+     {{ course.id}}. {{ course.title }}
     </div>
 
     <br>
 
     <img width="300" alt="Angular Logo"
-         src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular-1520x800.png"
+         src="{{course.iconUrl}}"
     />
 
     <div class="course-description">
-        A detailed walk-through of the most import part of angular . . .
+        {{ course.description }}
     </div>    
+
+    <br>
+    
+    <button (click)="onViewCourseClicked()">View Course</button>
 
 </div>
