@@ -19,6 +19,7 @@ export class AppComponent {
   onCourseSelected(course : ICourse)
   {
     console.log("App Componet - Course Selected.")
+    console.log(course)
   }
 
   title = 'angular-study-4';

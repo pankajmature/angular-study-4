@@ -1,8 +1,8 @@
 export interface ICourse {
     id:number;
     title:string;
-    iconUrl: string;
+    iconurl: string;
     description: string;
     category:string;
-    lessonsCount:number;
+    lessonscount:number;
 }
