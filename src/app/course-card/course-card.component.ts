@@ -24,6 +24,12 @@ export class CourseCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cardClasses(){
+    return {'beginner': true,
+            'course-card:': true}
+
+  }
+
   isImageAvailable()
   {
     if (this.course.iconurl !== "" ) {
