@@ -1,4 +1,4 @@
-<div class="course-card" *ngIf="course">
+<div class="course-card" *ngIf="course" ngClass="'beginner">
 
     <div class="course-title">
      {{ cardindex + ". " + course.title }}
@@ -11,7 +11,7 @@
     />
 
     <ng-template #noImage>
-        <p>No image is available.</p>
+        <p style="background-color:sandybrown;">No image is available.</p>
     </ng-template>
 
     <div class="course-description">
