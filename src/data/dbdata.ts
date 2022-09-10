@@ -21,7 +21,7 @@ export const COURSES: ICourse[] = [
         id: 3,
         title: 'NgRx In Depth',
         description: "Learn the modern Ngrx Ecosystem, including Store, Effects, Router Store, Ngrx Entity, Dev Tools and Schematics.",
-        iconurl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-ngrx-course.png',
+        iconurl: '',
         category: 'ADVANCED',
         lessonscount: 3
     },

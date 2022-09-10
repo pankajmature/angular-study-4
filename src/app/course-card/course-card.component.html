@@ -1,4 +1,4 @@
-<div class="course-card">
+<div class="course-card" *ngIf="course">
 
     <div class="course-title">
      {{ cardindex + ". " + course.title }}
@@ -7,8 +7,12 @@
     <br>
 
     <img width="300" alt="Course Image"
-         src="{{course.iconurl}}"
+         src="{{course.iconurl}}" *ngIf="isImageAvailable();else noImage"
     />
+
+    <ng-template #noImage>
+        <p>No image is available.</p>
+    </ng-template>
 
     <div class="course-description">
         {{ course.description }}
